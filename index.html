@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <!-- we import arjs version without NFT but with marker + location based support -->
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs>
+      <a-marker preset="hiro">
+        <a-image src="https://previews.123rf.com/images/photoplotnikov/photoplotnikov1610/photoplotnikov161000024/64932244-id-card-isolated-on-white-background-identification-card-icon-business-identity-id-card-icon-templat.jpg?fj=1" height="1" width="1" position="0 0.5 1"></a-image>
+        <a-box position="0 0.5 0" width="1" height="1" material="color:red;" background-image="https://previews.123rf.com/images/photoplotnikov/photoplotnikov1610/photoplotnikov161000024/64932244-id-card-isolated-on-white-background-identification-card-icon-business-identity-id-card-icon-templat.jpg?fj=1">
+            
+        <a-animation attribute="rotation"
+        dur="3000"
+        to="360 360 0"
+        repeat="indefinite"
+        easing="linear">
+
+        </a-animation>
+        </a-box>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
